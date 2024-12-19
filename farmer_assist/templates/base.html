@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri-Management</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    
+    <nav style="display: flex; justify-content: space-between; align-items: center; background: linear-gradient(90deg, #007B5E, #005F40); padding: 10px 20px; color: white;">
+        <div class="logo" style="font-size: 1.5rem; font-weight: bold;">Agri-Management</div>
+        <ul class="nav-links" style="list-style: none; display: flex; gap: 20px;">
+          <li><a href="{% url 'home' %}" style="text-decoration: none; color: white; font-weight: 500; transition: color 0.3s ease, border-bottom 0.3s ease;">Home</a></li>
+          <li><a href="{% url 'about' %}" style="text-decoration: none; color: white; font-weight: 500; transition: color 0.3s ease, border-bottom 0.3s ease;">About Us</a></li>
+          <li><a href="{% url 'contact' %}" style="text-decoration: none; color: white; font-weight: 500; transition: color 0.3s ease, border-bottom 0.3s ease;">Contact Us</a></li>
+          <li><a href="{% url 'login' %}" style="text-decoration: none; color: white; font-weight: 500; transition: color 0.3s ease, border-bottom 0.3s ease;">Login</a></li>
+          <li><a href="{% url 'signup' %}" style="text-decoration: none; color: white; font-weight: 500; transition: color 0.3s ease, border-bottom 0.3s ease;">Signup</a></li>
+        </ul>
+      </nav>
+      
+    
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Farmer Assist. All Rights Reserved.</p>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

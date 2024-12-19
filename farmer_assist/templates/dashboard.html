@@ -1,0 +1,108 @@
+<h2 class="header">Welcome, {{ user.username }}</h2>
+<div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agri-Management Dashboard</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            
+            header {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 1rem;
+            }
+            
+            main {
+                padding: 2rem;
+            }
+            
+            .container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                grid-gap: 2rem;
+            }
+            
+            .card {
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 1rem;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            
+            .card img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <header>
+            <h1>Agri-Management Dashboard</h1>
+        </header>
+    
+        <main>
+            <div class="container">
+                <div class="card">
+                    <h3>Crop Performance</h3>
+                    <img src="crop_performance.png" alt="Crop Performance Chart">
+                    <p>Your current crop health, growth stage, and yield potential.</p>
+                </div>
+    
+                <div class="card">
+                    <h3>Weather Forecast</h3>
+                    <img src="weather_forecast.png" alt="Weather Forecast">
+                    <p>Real-time weather updates and forecasts for your location.</p>
+                </div>
+    
+                <div class="card">
+                    <h3>Crop Management Recommendations</h3>
+                    <ul>
+                        <li>Irrigation schedule: ...</li>
+                        <li>Fertilization plan: ...</li>
+                        <li>Pest control measures: ...</li>
+                    </ul>
+                </div>
+    
+                <div class="card">
+                    <h3>Yield Prediction</h3>
+                    <p>Predicted yield based on data analysis.</p>
+                    <p>Expected yield: ...</p>
+                </div>
+    
+                <div class="card">
+                    <h3>AI Chat Assistant</h3>
+                    <p>Ask questions and get personalized advice.</p>
+                    <form>
+                        <textarea placeholder="Type your question here"></textarea>
+                        <button type="submit">Ask</button>
+                    </form>
+                </div>
+    
+                <div class="card">
+                    <h3>Seasonal Crop Suggestions</h3>
+                    <ul>
+                        <li>Crop 1</li>
+                        <li>Crop 2</li>
+                        <li>Crop 3</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+            <p>&copy; 2023 Agri-Management</p>
+        </footer>
+    
+    </body>
+    </html>
+</div>

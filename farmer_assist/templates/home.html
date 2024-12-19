@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Assist</title>
+    <style>
+        /* Overall page styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+        }
+
+        .header {
+            background-color: #2E7D32;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #1B5E20;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: #C8E6C9;
+        }
+
+        /* Main container */
+        .main-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2E7D32;
+            font-size: 28px;
+        }
+
+        /* Card grid */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #FFF;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Feature colors */
+        .card.weather {
+            background-color: #FFECB3; /* Light Yellow */
+        }
+
+        .card.yield {
+            background-color: #B3E5FC; /* Light Blue */
+        }
+
+        .card.chat {
+            background-color: #FFCDD2; /* Light Red */
+        }
+
+        .card.crop {
+            background-color: #C8E6C9; /* Light Green */
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #2E7D32;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div style="background-color: #dff0d8; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+        <h1 style="color: #1a5d1a; font-weight: bold; font-size: 40px; margin-bottom: 10px;">
+            Empowering Farmers for a Better Tomorrow
+        </h1>
+        <p style="color: #4a774a; font-size: 20px; line-height: 1.6; margin: 0;">
+            Our platform provides valuable tools for farmers, including accurate weather forecasts, 
+            crop yield predictions, and seasonal crop suggestions. With advanced technology and expert 
+            insights, we aim to enhance farming practices and improve productivity. Join us to make 
+            informed decisions and achieve high yields effortlessly.
+        </p>
+    </div>
+    
+
+    <!-- Navigation -->
+
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <h1>Your platform for high yield and expert farming decisions.</h1>
+        <div class="card-container">
+            <div class="card weather">
+                <h3>Weather Forecasting</h3>
+                <p>Get accurate weather predictions for better planning.</p>
+            </div>
+            <div class="card yield">
+                <h3>Yield Prediction</h3>
+                <p>Predict crop yields based on data analysis.</p>
+            </div>
+            <div class="card chat">
+                <h3>AI Chat Assistant</h3>
+                <p>Chat with AI for farming suggestions and solutions.</p>
+            </div>
+            <div class="card crop">
+                <h3>Seasonal Crop Suggestion</h3>
+                <p>Find out the best crops to grow based on the season.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    
+</body>
+</html>
+
+{% endblock %}
